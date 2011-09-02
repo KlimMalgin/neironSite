@@ -176,8 +176,27 @@ h5 { font-size:100%; }
         }
         .title{
             font-size: 2em;
-            padding: 10px 10px;
+            /*padding: 10px 10px;*/
+            padding-left: 10px;
         }
+        
+        .title #text{
+            position:relative;
+            top:-30px;
+        }
+        
+        .title img#button-go-geo{
+            position:relative;
+            top:0;
+            left:620px;
+        }
+        
+        .title img#button-go-communicator{
+            position:relative;
+            top:0;
+            left:534px;
+        }
+        
         .list-second li{
             float:left;
             border-right:1px solid #DDD;
