@@ -144,10 +144,10 @@ h5 { font-size:100%; }
       }
       
       #footer-inside {
-        width: 985px;
+        width: 980px;
         margin: -20px auto 0 auto;
         text-align: left;
-        padding: 20px;
+        padding: 10px;
       }      
       .inside-item{
           margin 0;
