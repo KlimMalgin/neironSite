@@ -145,7 +145,7 @@ h5 { font-size:100%; }
       
       #footer-inside {
         width: 985px;
-        margin: 20px auto;
+        margin: -20px auto 0 auto;
         text-align: left;
         padding: 20px;
       }      
