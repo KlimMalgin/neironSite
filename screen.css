@@ -34,7 +34,8 @@ h5 { font-size:100%; }
 
       .top-menu { position:relative; left:8px; background: #fff url('images/top-menu.png') no-repeat; }
       .top-menu { width:100%;height:54px;margin: 0 auto; color: #000; margin-bottom: 20px;}
-      .top-menu .logo { position:relative; top:10px; left:30px; width:90px; height:29px; background: url('images/logo.png') no-repeat;float:left; }
+      
+      /*.top-menu .logo { position:relative; top:10px; left:30px; width:90px; height:29px; background: url('images/logo.png') no-repeat;float:left; }*/
       
       .top-menu a { color: #000; }
       .top-menu a:hover { text-decoration: underline; }
@@ -43,7 +44,7 @@ h5 { font-size:100%; }
 
         .top-menu ul{
                 position:relative; 
-                left:40px;
+                left:0;
                 list-style:none;
                 width:100%;
                 height:54px;
@@ -56,7 +57,7 @@ h5 { font-size:100%; }
         .top-menu ul li a{
                 display:block;
                 height:54px;
-                padding:0 15px;
+                padding:0 8px;
                 float:left;
                 /*font:70%/40px Helvetica,"microsoft sans serif",arial,sans-serif;*/
                 color:#fff;
@@ -65,27 +66,66 @@ h5 { font-size:100%; }
                 vertical-align: middle;
         }
 
-        .top-menu ul li#i1 {width:104px;}
+        .top-menu ul li#i0 {width:147px;}
+        .top-menu ul li#i0 a span#s0 { width:147px; height:54px; background: url('images/menu-main-button-active.png') no-repeat;}
+        .top-menu ul li#i1 {width:124px;}
         .top-menu ul li#i1 a span#s1 {position: relative;top: 5px;}
         .top-menu ul li#i2 {width:126px;}
         .top-menu ul li#i2 a span#s2 {position: relative;top: 5px;}
-        .top-menu ul li#i3 {width:154px;}
+        .top-menu ul li#i3 {width:164px;}
         .top-menu ul li#i3 a span#s3 {position: relative;top: 5px;}
-        .top-menu ul li#i4 {width:154px;}
+        .top-menu ul li#i4 {width:168px;}
         .top-menu ul li#i4 a span#s4 {position: relative;top: 5px;}
-        .top-menu ul li#i5 {width:190px;}
+        .top-menu ul li#i5 {width:180px;}
         .top-menu ul li#i5 a span#s5 {position: relative;top: 5px;}
-        .top-menu ul li#i6 {width:104px;border-right:0 !important;}
-        .top-menu ul li#i6 a span#s6 {position: relative;top: 7px;}
+        
+        
+        .top-menu ul li#i6 {width:67px;border-right:0 !important;}
+        .top-menu ul li#i6 a span#s6 {position: relative;top: 7px; width:67px; height:54px;}
+        
+        
+        
+        .top-menu ul li.first a{
+                width:147px;
+                height:54px;
+                background:url(images/menu-main-button-nonactive.png) no-repeat;
+        }
+        .top-menu ul li.first a:link{
+                width:147px;
+                height:54px;
+                background:url(images/menu-main-button-nonactive.png) no-repeat;
+        }
 
-        .top-menu ul li a:hover,
-        .top-menu ul li.active a{
+        .top-menu ul li.first a:hover{
+                width:147px;
+                height:54px;
+                background:url(images/menu-main-button-active.png) no-repeat;
+        }
+        
+        
+        .top-menu ul li.leaf a:hover{
                 background:url(images/button-hover2.png) top left repeat-x;
         }
 
+        .top-menu ul li.last a{
+                width:67px;
+                height:54px;
+                background:url(images/menu-close-item-nonactive.png) no-repeat;
+        }
+        .top-menu ul li.last a:link{
+                width:67px;
+                height:54px;
+                background:url(images/menu-close-item-nonactive.png) no-repeat;
+        }
+
+        .top-menu ul li.last a:hover{
+                width:67px;
+                height:54px;
+                background:url(images/menu-close-item-active.png) no-repeat;
+        }
+        
       
-      
-      div.separate {width:2px; height:54px; background: #D02C2C url('../img/main.jpg') no-repeat;}
+      div.separate {width:2px; height:54px; background: url('../img/main.jpg') no-repeat;}
       
       .content {
       float: left; 
@@ -94,7 +134,7 @@ h5 { font-size:100%; }
       z-index: 10;
       }
       
-      #panel-right { float:right; width:230px; padding: 15px 10px 10px 10px; color: }
+      #panel-right { float:right; width:230px; padding: 15px 10px 10px 10px; }
       #panel-right-inside {border-left: 1px solid #ca4747; padding: 0 0 0 16px;}
       #panel-right span { color: #e49695; }
       #panel-right p {margin: 0;}
@@ -243,44 +283,3 @@ h5 { font-size:100%; }
             background-position:0 -12px;
             position: relative;
         }
-/*--------------slides-----------------------------*/
-/*-----------------------------MY CSS----------------------------------------*/
-
-/* odstavce -------------------------------------------------------------------- */
-p { margin:15px 0; line-height: 24px; font-size: 95%}
-
-.content p {color: #fff; margin-top: 10px;}
-
-/* tabulky --------------------------------------------------------------------- */
-table { margin:15px 0; border: 1px solid #cdcdcd; border-collapse:collapse; border-spacing:0; font-size:100%; width: 100%;}
-th { text-align:center; font-weight:bold; border: 1px solid #cdcdcd;}
-th, td { padding:4px 6px; border: 1px solid #cdcdcd;}
-tr.table-top {background: #e5e5e5; font-weight: bold;}
-
-/* seznamy --------------------------------------------------------------------- */
-ul, ol { display:block; margin:15px 0 15px 40px; }
-ul ul, ul ul ul, ol ol, ol ol ol { margin:0; margin-left:20px; }
-ol { list-style-type:decimal; }
-ol ol { list-style-type:upper-alpha; }
-ol ol ol {list-style-type:lower-alpha; }
-li { display:list-item; }
-ul li a { text-decoration:underline; }
-
-/* definice -------------------------------------------------------------------- */
-dl { margin:15px 0; }
-dt { font-weight:bold; }
-dd { margin-left:30px; }
-
-/* ostatni --------------------------------------------------------------------- */
-fieldset { margin:15px 0; padding:10px; border:1px solid #CCC; }
-legend { margin-left:10px; font-size:100%; font-weight:bold; color:#000; }
-abbr, acronym, .help { border-bottom:1px dotted #CCC; cursor:help; }
-blockquote { margin:15px 20px; font-style:italic; }
-del, .del { text-decoration:line-through; }
-strong, .strong { font-weight:bold; }
-cite, em, q, var { font-style:italic; }
-code, kbd, samp  {font-family:monospace; font-size:110%; }
-hr { display:block; height:1px; margin:10px 0; padding:0; border:0 solid #CCC; background:#CCC; color:#CCC;} 
-.light {padding: 4px 5px; background: #ac0001; text-decoration: none;} .light:hover {color: #fff;}
-.noscreen { display:none; }
-
