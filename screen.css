@@ -23,7 +23,7 @@ h5 { font-size:100%; }
 
 
 #layout { 
-  width:985px; 
+  width:1000px; 
   margin:0 auto; 
   text-align:left; 
 }
@@ -144,7 +144,7 @@ h5 { font-size:100%; }
       }
       
       #footer-inside {
-        width: 980px;
+        width: 986px;
         margin: -20px auto 0 auto;
         text-align: left;
         padding: 10px;
@@ -221,7 +221,9 @@ h5 { font-size:100%; }
         }
         .last-news{
             width: 100%;
+            font-size: .9em;
             height: 100%;
+            margin: 5px 15px;
         }
         .footer-topic{
             font-size: 1.5em;
@@ -237,7 +239,7 @@ h5 { font-size:100%; }
             background-image: url('images/page-footer-big.png');
             z-index: 10;
             box-shadow:3px 3px 3px #DDD;
-            margin: 2px;
+            margin: 3px;
             border:1px solid #bbbbbb;
             border-radius: 10px;
             
