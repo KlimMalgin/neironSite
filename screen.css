@@ -144,8 +144,10 @@ h5 { font-size:100%; }
       }
       
       #footer-inside {
-            position:relative; 
-            left:12px;
+        width: 985px;
+        margin: 10px auto;
+        text-align: left;
+        padding: 20px;
       }      
       
       /*#footer {
@@ -231,7 +233,7 @@ h5 { font-size:100%; }
             background-image: url('images/page-footer-big.png');
             z-index: 10;
             box-shadow:3px 3px 3px #DDD;
-            margin: 10px;
+            margin: 2px;
             border:1px solid #bbbbbb;
             border-radius: 10px;
             
