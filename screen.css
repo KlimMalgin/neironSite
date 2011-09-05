@@ -144,7 +144,7 @@ h5 { font-size:100%; }
       }
       
       #footer-inside {
-        width: 986px;
+        width: 994px;
         margin: -20px auto 0 auto;
         text-align: left;
         padding: 10px;
@@ -224,10 +224,9 @@ h5 { font-size:100%; }
             background-image: url('images/page-footer-big.png');
             z-index: 10;
             box-shadow:3px 3px 3px #DDD;
-            margin: 3px;
+            margin: 5px;
             border:1px solid #bbbbbb;
             border-radius: 10px;
-            
         }
         
         .inside-item{
@@ -261,9 +260,11 @@ h5 { font-size:100%; }
             box-shadow:2px 2px 2px #DDD;
         }
         .footer-text{
-            width: 1024px;
+            width: 960px;
             left: 50%;
-            margin-left: -512px;
+            margin-left: -490px;
+            padding: 10px;
+            margin-top:10px;
             position: absolute;
             border-top: 1px solid #DDD;
             color: #707070;
@@ -275,6 +276,7 @@ h5 { font-size:100%; }
             width: 100%;
             height: 100%;
             color: #707070;
+            padding: 10px;
         }
         
         .last-news a
