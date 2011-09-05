@@ -307,30 +307,37 @@ h5 { font-size:100%; }
          }
         
         .pagination {
-            margin:-20px auto 0;
-            width:100px;
+            margin: -30px auto 0;
+            width:300px;
             z-index: 100;
             position: relative;
         }
         
         .pagination li {
             float:left;
-            margin:0 1px;
+            margin:0 10px;
             list-style:none;
         }
         
         .pagination li a {
             display:block;
-            width:12px;
+            width:15px;
             height:0;
-            padding-top:12px;
-            background-image:url(img/pagination.png);
-            background-position:0 0;
+            padding-top:15px;
+            background-image:url(img/slide-pips.png);
+            background-position:0 -15px;
             float:left;
             overflow:hidden;
         }
         
+        .pagination li a:hover {
+            background-image:url(img/slide-pips.png);
+            background-position:0 -30px;
+        }
+        
+        
         .pagination li.current a {
-            background-position:0 -12px;
+            background-image:url(img/slide-pips.png);
+            background-position:0 0px;
             position: relative;
         }
