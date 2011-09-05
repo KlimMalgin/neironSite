@@ -68,7 +68,7 @@ h5 { font-size:100%; }
 
         .top-menu ul li#i0 {width:147px;}
         .top-menu ul li#i0 a span#s0 { width:147px; height:54px; background: url('images/menu-main-button-active.png') no-repeat;}
-        .top-menu ul li#i1 {width:124px;}
+        .top-menu ul li#i1 {width:129px;}
         .top-menu ul li#i1 a span#s1 {position: relative;top: 5px;}
         .top-menu ul li#i2 {width:126px;}
         .top-menu ul li#i2 a span#s2 {position: relative;top: 5px;}
@@ -153,21 +153,6 @@ h5 { font-size:100%; }
           margin 0;
           text-align: auto;
       }
-      /*#footer {
-      background: #303030;
-      color: #b1b1b1;
-      }
-      
-      #footer a{
-      color: #b1b1b1;
-      }
-      
-
-      
-      #footer-inside p {
-      margin-top: 0;
-      margin-bottom: 0;
-      }
       
      */
     /*-----------------------------MY CSS----------------------------------------*/
@@ -233,7 +218,7 @@ h5 { font-size:100%; }
             text-align: center;
         }
         .footer-item {
-            display: inline-block;
+            float: left;
             width: 318px;
             height: 142px;
             background-image: url('images/page-footer-big.png');
@@ -255,10 +240,7 @@ h5 { font-size:100%; }
             text-align: center;
         }
         
-        .footer-item#bug{
-            position:relative;
-            top:11px;
-        }
+        
         
         .footer-topic,.footer-content{
             display: block;
