@@ -18,11 +18,11 @@ body {
 
   #header { position:relative; background: #303030; margin-bottom: 20px; }
 
-      .pre-link{position:relative;top:0;left:803px;margin-bottom: 5px;font-size:8.25pt;}
-      .pre-link a{text-decoration:none;}
+      .pre-link{position:relative;top:0;left:803px;margin-bottom: 5px;font-size:8.25pt;width:180px;}
+      .pre-link a{text-decoration:none;color: #0098D0 !important;}
       
-      .top-menu { position:relative; left:8px;  } /* background: #fff url('images/top-menu.png') no-repeat; */
-      .top-menu { width:100%;height:54px;margin: 0 auto; color: #000; margin-bottom: 20px;}
+      .top-menu { position:relative; left:8px;box-shadow:3px 3px 3px #DDD; border-radius: 10px;} /* background: #fff url('images/top-menu.png') no-repeat; */
+      .top-menu { width:967px;height:54px;margin: 0 auto; color: #000; margin-bottom: 20px;}
       
       /*.top-menu .logo { position:relative; top:10px; left:30px; width:90px; height:29px; background: url('images/logo.png') no-repeat;float:left; }*/
       
@@ -85,9 +85,9 @@ body {
         .top-menu ul li#i5 a:hover {width:164px;height:54px;background:url('images/menu-item-5-nonactive.png') no-repeat;}*/
         
         
-        .top-menu ul li#i6 a {width:67px;height:54px;background:url('images/menu-item-lock.png') no-repeat;}
-        .top-menu ul li#i6 a:link {width:67px;height:54px;background:url('images/menu-item-lock.png') no-repeat;}
-        .top-menu ul li#i6 a:hover {width:67px;height:54px;background:url('images/menu-item-lock-hover.png') no-repeat;}
+        .top-menu ul li#i6 a {width:67px;height:54px;background:url('images/qwertyu.png') no-repeat;}
+        .top-menu ul li#i6 a:link {width:67px;height:54px;background:url('images/qwertyu.png') no-repeat;}
+        .top-menu ul li#i6 a:hover {width:67px;height:54px;background:url('images/qwerty.png') no-repeat;}
         
         
         
