@@ -1,265 +1,241 @@
-* { margin:0; padding:0; }
-body, div, span, p, a, img, ul, ol, li, table, th, tr, td, form, fieldset, legend, dl, dt, dd, blockquote, applet, object { border:0; }
+* { margin:0; padding:0;}
+
 body { 
   padding: 0; 
-  background: #fff url('../img/bg.jpg') repeat-x; 
   font: 0.8em/1.5 "arial",sans-serif; 
-  color: #303030; 
   text-align: center; 
 }
 
-/* obecne odkazy --------------------------------------------------------------- */
-a {color:#b41818;}
-a:link {color:#b41818;}
-a:hover {color:#b41818; text-decoration: none;}
-
-/* nadpisy --------------------------------------------------------------------- */
-h1, h2, h3, h4, h5, h6 { margin:15px 0 7px 0; }
-h1 { font-size:200%; }
-h2 { font-size:170%; font-weight: normal;}
-h3 { font-size:105%; border-bottom: 1px solid #ddd;}
-h4 { font-size:120%; }
-h5 { font-size:100%; }
+   #layout { 
+     width:986px; 
+     margin:0 auto; 
+     text-align:left; 
+   }
 
 
-#layout { 
-  width:1000px; 
-  margin:0 auto; 
-  text-align:left; 
+
+  #header { position:relative; background: #303030; margin-bottom: 20px; }
+
+  .top-menu { position:relative; left:0px; background: #fff url('images/top-menu.png') no-repeat; }
+  .top-menu { width:100%;height:54px;margin: 0 auto; color: #000; margin-bottom: 25px;}
+  
+  /*.top-menu .logo { position:relative; top:10px; left:30px; width:90px; height:29px; background: url('images/logo.png') no-repeat;float:left; }*/
+  
+  .top-menu a { color: #000; }
+  .top-menu a:hover { text-decoration: none; }
+
+  
+
+    .top-menu ul{
+            position:relative; 
+            left:0;
+            list-style:none;
+            width:100%;
+            height:54px;
+    }
+    .top-menu ul li{
+            float:left;
+            border-right:1px solid #333;
+    }
+    
+    .top-menu ul li a{
+            display:block;
+            height:54px;
+            padding:0 8px;
+            float:left;
+            /*font:70%/40px Helvetica,"microsoft sans serif",arial,sans-serif;*/
+        color:#fff;
+        text-decoration:none;
+        text-align:center;
+        vertical-align: middle;
 }
 
+    .top-menu ul li#i0 {width:147px;}
+    .top-menu ul li#i0 a span#s0 { width:147px; height:54px; background: url('images/menu-main-button-active.png') no-repeat;}
+    .top-menu ul li#i1 {width:129px;}
+    .top-menu ul li#i1 a span#s1 {position: relative;top: 5px;}
+    .top-menu ul li#i2 {width:126px;}
+    .top-menu ul li#i2 a span#s2 {position: relative;top: 5px;}
+    .top-menu ul li#i3 {width:164px;}
+    .top-menu ul li#i3 a span#s3 {position: relative;top: 5px;}
+    .top-menu ul li#i4 {width:168px;}
+    .top-menu ul li#i4 a span#s4 {position: relative;top: 5px;}
+    .top-menu ul li#i5 {width:180px;}
+    .top-menu ul li#i5 a span#s5 {position: relative;top: 5px;}
+    
+    
+    .top-menu ul li#i6 {width:67px;border-right:0 !important;}
+    .top-menu ul li#i6 a span#s6 {position: relative;top: 7px; width:67px; height:54px;}
+    
+    
+    
+    .top-menu ul li.first a{
+            width:147px;
+            height:54px;
+            background:url(images/menu-main-button-nonactive.png) no-repeat;
+    }
+    .top-menu ul li.first a:link{
+            width:147px;
+            height:54px;
+            background:url(images/menu-main-button-nonactive.png) no-repeat;
+    }
 
-  	
-      #header { position:relative; background: #303030; margin-bottom: 20px; }
+    .top-menu ul li.first a:hover{
+            width:147px;
+            height:54px;
+            background:url(images/menu-main-button-active.png) no-repeat;
+    }
+    
+    
+    .top-menu ul li.leaf a:hover{
+            background:url(images/button-hover2.png) top left repeat-x;
+    }
 
-      .top-menu { position:relative; left:8px; background: #fff url('images/top-menu.png') no-repeat; }
-      .top-menu { width:100%;height:54px;margin: 0 auto; color: #000; margin-bottom: 20px;}
-      
-      /*.top-menu .logo { position:relative; top:10px; left:30px; width:90px; height:29px; background: url('images/logo.png') no-repeat;float:left; }*/
-      
-      .top-menu a { color: #000; }
-      .top-menu a:hover { text-decoration: none; }
+    .top-menu ul li.last a{
+            width:67px;
+            height:54px;
+            background:url(images/menu-close-item-nonactive.png) no-repeat;
+    }
+    .top-menu ul li.last a:link{
+            width:67px;
+            height:54px;
+            background:url(images/menu-close-item-nonactive.png) no-repeat;
+    }
 
-      
+    .top-menu ul li.last a:hover{
+            width:67px;
+            height:54px;
+            background:url(images/menu-close-item-active.png) no-repeat;
+    }
+    
+  
+  div.separate {width:2px; height:54px; background: url('../img/main.jpg') no-repeat;}
+  
 
-        .top-menu ul{
-                position:relative; 
-                left:0;
-                list-style:none;
-                width:100%;
-                height:54px;
-        }
-        .top-menu ul li{
-                float:left;
-                border-right:1px solid #333;
-        }
-        
-        .top-menu ul li a{
-                display:block;
-                height:54px;
-                padding:0 8px;
-                float:left;
-                /*font:70%/40px Helvetica,"microsoft sans serif",arial,sans-serif;*/
-                color:#fff;
-                text-decoration:none;
-                text-align:center;
-                vertical-align: middle;
-        }
+  
+  #panel-right { float:right; width:230px; padding: 15px 10px 10px 10px; }
+  #panel-right-inside {border-left: 1px solid #ca4747; padding: 0 0 0 16px;}
+  #panel-right span { color: #e49695; }
+  #panel-right p {margin: 0;}
+  
+  #main {
+  padding: 0;
+  }
+  
+  #footer-inside {
+    width: 994px;
+    margin: -20px auto 0 auto;
+    text-align: left;
+    padding: 10px;
+  }      
+  .inside-item{
+      margin 0;
+      text-align: auto;
+  }
+  
+ */
+/*-----------------------------MY CSS----------------------------------------*/
 
-        .top-menu ul li#i0 {width:147px;}
-        .top-menu ul li#i0 a span#s0 { width:147px; height:54px; background: url('images/menu-main-button-active.png') no-repeat;}
-        .top-menu ul li#i1 {width:129px;}
-        .top-menu ul li#i1 a span#s1 {position: relative;top: 5px;}
-        .top-menu ul li#i2 {width:126px;}
-        .top-menu ul li#i2 a span#s2 {position: relative;top: 5px;}
-        .top-menu ul li#i3 {width:164px;}
-        .top-menu ul li#i3 a span#s3 {position: relative;top: 5px;}
-        .top-menu ul li#i4 {width:168px;}
-        .top-menu ul li#i4 a span#s4 {position: relative;top: 5px;}
-        .top-menu ul li#i5 {width:180px;}
-        .top-menu ul li#i5 a span#s5 {position: relative;top: 5px;}
-        
-        
-        .top-menu ul li#i6 {width:67px;border-right:0 !important;}
-        .top-menu ul li#i6 a span#s6 {position: relative;top: 7px; width:67px; height:54px;}
-        
-        
-        
-        .top-menu ul li.first a{
-                width:147px;
-                height:54px;
-                background:url(images/menu-main-button-nonactive.png) no-repeat;
-        }
-        .top-menu ul li.first a:link{
-                width:147px;
-                height:54px;
-                background:url(images/menu-main-button-nonactive.png) no-repeat;
-        }
+.list-second{
+   position:relative; 
+   left:-10px;
+   list-style:none;
+   width:100%;
+   height:54px;
+   
+}
+.second-menu{
+   margin: 0px 0px 43px 15px;
+}
+.img-title{
+    margin: 0px 0px 0px 15px;
+}
+/*.title{
+    font-size: 2em;
+   
+    padding-left: 10px;
+}
 
-        .top-menu ul li.first a:hover{
-                width:147px;
-                height:54px;
-                background:url(images/menu-main-button-active.png) no-repeat;
-        }
-        
-        
-        .top-menu ul li.leaf a:hover{
-                background:url(images/button-hover2.png) top left repeat-x;
-        }
+.title #text{
+    position:relative;
+    top:-30px;
+}*/
 
-        .top-menu ul li.last a{
-                width:67px;
-                height:54px;
-                background:url(images/menu-close-item-nonactive.png) no-repeat;
-        }
-        .top-menu ul li.last a:link{
-                width:67px;
-                height:54px;
-                background:url(images/menu-close-item-nonactive.png) no-repeat;
-        }
+.title img#button-go-geo{
+    position:relative;
+    top:0;
+    left:620px;
+}
 
-        .top-menu ul li.last a:hover{
-                width:67px;
-                height:54px;
-                background:url(images/menu-close-item-active.png) no-repeat;
-        }
-        
-      
-      div.separate {width:2px; height:54px; background: url('../img/main.jpg') no-repeat;}
-      
-      .content {
-      float: left; 
-      padding: 12px 0 12px 10px;
-      width:500px;
-      z-index: 10;
-      }
-      
-      #panel-right { float:right; width:230px; padding: 15px 10px 10px 10px; }
-      #panel-right-inside {border-left: 1px solid #ca4747; padding: 0 0 0 16px;}
-      #panel-right span { color: #e49695; }
-      #panel-right p {margin: 0;}
-      
-      #main {
-      padding: 0;
-      }
-      
-      #footer-inside {
-        width: 994px;
-        margin: -20px auto 0 auto;
-        text-align: left;
-        padding: 10px;
-      }      
-      .inside-item{
-          margin 0;
-          text-align: auto;
-      }
-      
-     */
-    /*-----------------------------MY CSS----------------------------------------*/
+.title img#button-go-communicator{
+    position:relative;
+    top:0;
+    left:534px;
+}
 
-        .list-second{
-           position:relative; 
-           left:-10px;
-           list-style:none;
-           width:100%;
-           height:54px;
-        }
-        .title{
-            font-size: 2em;
-            /*padding: 10px 10px;*/
-            padding-left: 10px;
-        }
-        
-        .title #text{
-            position:relative;
-            top:-30px;
-        }
-        
-        .title img#button-go-geo{
-            position:relative;
-            top:0;
-            left:620px;
-        }
-        
-        .title img#button-go-communicator{
-            position:relative;
-            top:0;
-            left:534px;
-        }
-        
-        .list-second li{
-            float:left;
-            border-right:1px solid #DDD;
-            padding: 1px 20px;
-            
-        }
-        .list-second li:last-child{
-            border-right: 0;
-        }
-        .list-second a{
-            text-decoration: none;
-            color: #666666;
-        }
-        .list-second a:hover{
-            text-decoration: underline;
-            color: #0098d0;
-        }
-        .last-news{
-            width: 100%;
-            font-size: .9em;
-            height: 100%;
-            margin: 5px 15px;
-        }
-        .footer-topic{
-            font-size: 1.5em;
-        }
-        .footer-content{
-            font-size: .8em;
-            text-align: center;
-        }
-        .footer-item {
-            float: left;
-            width: 318px;
-            height: 142px;
-            background-image: url('images/page-footer-big.png');
-            z-index: 10;
-            box-shadow:3px 3px 3px #DDD;
-            margin: 5px;
-            border:1px solid #bbbbbb;
-            border-radius: 10px;
-        }
-        
-        .inside-item{
-            background-image: url('images/page-footer-litle.png');
-            z-index: 100;
-            width: 310px;
-            height: 134px;
-            margin: .4em;
-            border-radius: 10px;
-            text-align: center;
-        }
-        
-        
-        
-        .footer-topic,.footer-content{
-            display: block;
-        }
-      /*--------------slides-----------------------------*/
-         #container {
-        width:994px;
-        position:relative;
-        z-index:0;
-        }
-        
-        
-#example {
-            width:1003px;
-            height:480px;
-            border: 1px solid #DDD;
-            border-radius: 10px;
-            box-shadow:2px 2px 2px #DDD;
-        }
-        .footer-text{
+.list-second li{
+    float:left;
+    border-right:1px solid #DDD;
+    padding: 0px 24px;
+    list-style:none;
+ 
+}
+.list-second li:last-child{
+    border-right: 0;
+}
+.list-second li:first-child{
+    padding: 0px 24px 0px 0px;
+}
+.list-second a{
+    text-decoration: none;
+    color: #666666;
+}
+.list-second a:hover{
+    text-decoration: underline;
+    color: #0098d0;
+}
+.last-news{
+    width: 100%;
+    font-size: .9em;
+    height: 100%;
+    padding: 17px 0px 13px 6px;
+    color: #707070;
+}
+.footer-topic{
+    font-size: 1.5em;
+}
+.footer-content{
+    font-size: .8em;
+    text-align: center;
+}
+.footer-item {
+    float: left;
+    width: 318px;
+    height: 142px;
+    background-image: url('images/page-footer-big.png');
+    z-index: 10;
+    box-shadow:3px 3px 3px #DDD;
+    margin: 5px;
+    border:1px solid #bbbbbb;
+    border-radius: 10px;
+}
+
+.inside-item{
+    background-image: url('images/page-footer-litle.png');
+        z-index: 100;
+        width: 310px;
+        height: 134px;
+        margin: .4em;
+        border-radius: 10px;
+        text-align: center;
+    }
+    
+    
+    
+    .footer-topic,.footer-content{
+        display: block;
+    }
+    .footer-text{
             width: 960px;
             left: 50%;
             margin-left: -490px;
@@ -272,33 +248,51 @@ h5 { font-size:100%; }
         .footer-content{
             color: #666666;
         }
-        .last-news{
-            width: 100%;
-            height: 100%;
-            color: #707070;
-            padding: 10px;
-        }
+        
         
         .last-news a
         {
             color: #0098d0 !important;
         }
+  /*--------------slides-----------------------------
+
+________________________       982 
+
+ ______________________    974
+
+
+                            
+
+ ______________________
+        444
+________________________
+        452
+*/
+
+         #container {
+            width:982px;
+            position:relative;
+            z-index:0;
+        }
+
+        #example {
+            width:974px;
+            height:444px;
+            border: 1px solid #DDD;
+            border-radius: 10px;
+            box-shadow:2px 2px 2px 2px #DDD;
+            padding: 4px;
+        }
 
         .slides_container {
-            width:994px;
+            width:974px;
             overflow:hidden;
             position:relative;
             display:none;
-            margin: 4px;
-        }
-        .slides_container a{
-            width: 64px !important;
-            height 64px !important;
-            
         }
         .slide-image{
-            width: 994px;
-            height: 471px;
+            width: 974px;
+            height: 444px;
          }
         
         .pagination {
@@ -313,7 +307,6 @@ h5 { font-size:100%; }
             margin:0 1px;
             list-style:none;
         }
-        
         .pagination li a {
             display:block;
             width:12px;
@@ -329,3 +322,41 @@ h5 { font-size:100%; }
             background-position:0 -12px;
             position: relative;
         }
+/*
+ * Общее
+
+Проверить ширину страницы в px. (в макетах есть гидлайны)
+Проверить размер текста (в макете главной страницы указаны в pt для разрешения 96dpi - можно ориентироваться)
+
+1. Главное меню
+
+- Кнопки сделать картинками (без текста)
+- пункты "сервис совещаний", "Система эквайринга", "Телефон..." - не активные (см. макеты)
+- вертикали-разделители кнопок сделать частью кнопки, а не отдельным элементом (см. макеты - они толщиной 2px, и при этом не одноцветные)
+- тень под плашками вернуть на место
+- верхняя ссылка "презентация проекта neiron" потерялась
+
+2. Слайдшоу
+
+- Размер не соответствует тому, что в макете
+  - поэтому картинка масштабируется, и становится размытой
+- Выровнено не по центру (FF 6)
+- Маркеры фреймов (сейчас серо-зеленые) есть в макете. По названию слоев понятно, где текущая, а где hover
+  - интервал между маркерами слишком маленький
+- уменьшить время смены слайда до 5 сек.
+- убрать обводку плашки и вернуть тень
+
+3. Новости (3 блока с иконками)
+
+- Убрать обводку, вернуть тень
+- взять плашки из макета
+- Проверить размер текста
+- Привести межстрочные интервалы и отступы всех элементов в соотв. с макетом
+
+4. Страница второго уровня
+
+- Заголовок страницы сделать картинкой
+- Проверить интервалы (от меню до заголовка, от заголовка до второстепенного меню, от второстепенного меню до слайдшоу)
+- Кнопку "GO" убрать
+- Новые слайды без кнопки "GO" приложены
+ */
