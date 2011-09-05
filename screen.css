@@ -3,6 +3,9 @@
 body { 
   padding: 0; 
   font: 0.8em/1.5 "arial",sans-serif; 
+  background: #fff url('../img/bg.jpg') repeat-x; 
+  font-family: "Verdana",sans-serif; 
+  color: #303030; 
   text-align: center; 
 }
 
@@ -102,6 +105,18 @@ body {
             background:url(images/menu-close-item-nonactive.png) no-repeat;
     }
 
+      .pre-link{position:relative;top:0;left:803px;margin-bottom: 5px;font-size:8.25pt;}
+      .pre-link a{text-decoration:none;}
+      
+      .top-menu { position:relative; left:8px;  } /* background: #fff url('images/top-menu.png') no-repeat; */
+      .top-menu { width:100%;height:54px;margin: 0 auto; color: #000; margin-bottom: 20px;}
+      
+      /*.top-menu .logo { position:relative; top:10px; left:30px; width:90px; height:29px; background: url('images/logo.png') no-repeat;float:left; }*/
+      
+      .top-menu a { color: #000; }
+      .top-menu a:hover { text-decoration: none; }
+
+
     .top-menu ul li.last a:hover{
             width:67px;
             height:54px;
@@ -111,6 +126,7 @@ body {
   
   div.separate {width:2px; height:54px; background: url('../img/main.jpg') no-repeat;}
   
+
 
   
   #panel-right { float:right; width:230px; padding: 15px 10px 10px 10px; }
@@ -166,6 +182,85 @@ body {
     top:0;
     left:620px;
 }
+
+        .top-menu ul{
+                position:relative; 
+                left:0;
+                list-style:none;
+                width:100%;
+                height:54px;
+        }
+        .top-menu ul li{
+                float:left;
+        }
+        
+        .top-menu ul li a{
+                display:block;
+                height:54px;
+                /* padding:0 8px; */
+                float:left;
+                /*font:70%/40px Helvetica,"microsoft sans serif",arial,sans-serif;*/
+                color:#fff;
+                text-decoration:none;
+                text-align:center;
+                vertical-align: middle;
+        }
+
+        /*
+        .top-menu ul li.first a{width:147px;height:54px;background:url(images/menu-main-button-nonactive.png) no-repeat;}
+        .top-menu ul li.first a:link{width:147px;height:54px;background:url(images/menu-main-button-nonactive.png) no-repeat;}
+        .top-menu ul li.first a:hover{width:147px;height:54px;background:url(images/menu-main-button-active.png) no-repeat;}
+        */
+        
+        .top-menu ul li#i0 a {width:147px;height:54px;background:url('images/menu-item-main.png') no-repeat;}
+        .top-menu ul li#i0 a:link {width:147px;height:54px;background:url('images/menu-item-main.png') no-repeat;}
+        .top-menu ul li#i0 a:hover {width:147px;height:54px;background:url('images/menu-item-main-hover.png') no-repeat;}
+        
+        .top-menu ul li#i1 a {width:140px;height:54px;background:url('images/menu-item-2.png') no-repeat;}
+        .top-menu ul li#i1 a:link {width:140px;height:54px;background:url('images/menu-item-2.png') no-repeat;}
+        .top-menu ul li#i1 a:hover {width:140px;height:54px;background:url('images/menu-item-2-hover.png') no-repeat;}
+        
+        .top-menu ul li#i2 a {width:123px;height:54px;background:url('images/menu-item-3.png') no-repeat;}
+        .top-menu ul li#i2 a:link {width:123px;height:54px;background:url('images/menu-item-3.png') no-repeat;}
+        .top-menu ul li#i2 a:hover {width:123px;height:54px;background:url('images/menu-item-3-hover.png') no-repeat;}
+        
+        .top-menu ul li#i3 div {width:163px;height:54px;background:url('images/menu-item-4-nonactive.png') no-repeat;}
+        /*.top-menu ul li#i3 a:link {width:163px;height:54px;background:url('images/menu-item-4-nonactive.png') no-repeat;}
+        .top-menu ul li#i3 a:hover {width:163px;height:54px;background:url('images/menu-item-4-nonactive.png') no-repeat;}*/
+        
+        .top-menu ul li#i4 div{width:163px;height:54px;background:url('images/menu-item-6-nonactive.png') no-repeat;}
+        /*.top-menu ul li#i4 a:link {width:163px;height:54px;background:url('images/menu-item-6-nonactive.png') no-repeat;}
+        .top-menu ul li#i4 a:hover {width:163px;height:54px;background:url('images/menu-item-6-nonactive.png') no-repeat;}*/
+        
+        .top-menu ul li#i5 div {width:164px;height:54px;background:url('images/menu-item-5-nonactive.png') no-repeat;}
+        /*.top-menu ul li#i5 a:link {width:164px;height:54px;background:url('images/menu-item-5-nonactive.png') no-repeat;}
+        .top-menu ul li#i5 a:hover {width:164px;height:54px;background:url('images/menu-item-5-nonactive.png') no-repeat;}*/
+        
+        
+        .top-menu ul li#i6 a {width:67px;height:54px;background:url('images/menu-item-lock.png') no-repeat;}
+        .top-menu ul li#i6 a:link {width:67px;height:54px;background:url('images/menu-item-lock.png') no-repeat;}
+        .top-menu ul li#i6 a:hover {width:67px;height:54px;background:url('images/menu-item-lock-hover.png') no-repeat;}
+        
+        
+        
+        
+        
+        .top-menu ul li.leaf a:hover{
+                background:url(images/button-hover2.png) top left repeat-x;
+        }
+
+        
+        .top-menu ul li.last a{
+                width:67px;
+                height:54px;
+                background:url(images/menu-close-item-nonactive.png) no-repeat;
+        }
+        .top-menu ul li.last a:link{
+                width:67px;
+                height:54px;
+                background:url(images/menu-close-item-nonactive.png) no-repeat;
+        }
+
 
 .title img#button-go-communicator{
     position:relative;
