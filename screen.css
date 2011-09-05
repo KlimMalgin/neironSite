@@ -3,7 +3,7 @@ body, div, span, p, a, img, ul, ol, li, table, th, tr, td, form, fieldset, legen
 body { 
   padding: 0; 
   background: #fff url('../img/bg.jpg') repeat-x; 
-  font: 0.8em/1.5 "arial",sans-serif; 
+  font-family: "Verdana",sans-serif; 
   color: #303030; 
   text-align: center; 
 }
@@ -32,7 +32,10 @@ h5 { font-size:100%; }
   	
       #header { position:relative; background: #303030; margin-bottom: 20px; }
 
-      .top-menu { position:relative; left:8px; background: #fff url('images/top-menu.png') no-repeat; }
+      .pre-link{position:relative;top:0;left:803px;margin-bottom: 5px;font-size:8.25pt;}
+      .pre-link a{text-decoration:none;}
+      
+      .top-menu { position:relative; left:8px;  } /* background: #fff url('images/top-menu.png') no-repeat; */
       .top-menu { width:100%;height:54px;margin: 0 auto; color: #000; margin-bottom: 20px;}
       
       /*.top-menu .logo { position:relative; top:10px; left:30px; width:90px; height:29px; background: url('images/logo.png') no-repeat;float:left; }*/
@@ -51,13 +54,12 @@ h5 { font-size:100%; }
         }
         .top-menu ul li{
                 float:left;
-                border-right:1px solid #333;
         }
         
         .top-menu ul li a{
                 display:block;
                 height:54px;
-                padding:0 8px;
+                /* padding:0 8px; */
                 float:left;
                 /*font:70%/40px Helvetica,"microsoft sans serif",arial,sans-serif;*/
                 color:#fff;
@@ -66,47 +68,50 @@ h5 { font-size:100%; }
                 vertical-align: middle;
         }
 
-        .top-menu ul li#i0 {width:147px;}
-        .top-menu ul li#i0 a span#s0 { width:147px; height:54px; background: url('images/menu-main-button-active.png') no-repeat;}
-        .top-menu ul li#i1 {width:129px;}
-        .top-menu ul li#i1 a span#s1 {position: relative;top: 5px;}
-        .top-menu ul li#i2 {width:126px;}
-        .top-menu ul li#i2 a span#s2 {position: relative;top: 5px;}
-        .top-menu ul li#i3 {width:164px;}
-        .top-menu ul li#i3 a span#s3 {position: relative;top: 5px;}
-        .top-menu ul li#i4 {width:168px;}
-        .top-menu ul li#i4 a span#s4 {position: relative;top: 5px;}
-        .top-menu ul li#i5 {width:180px;}
-        .top-menu ul li#i5 a span#s5 {position: relative;top: 5px;}
+        /*
+        .top-menu ul li.first a{width:147px;height:54px;background:url(images/menu-main-button-nonactive.png) no-repeat;}
+        .top-menu ul li.first a:link{width:147px;height:54px;background:url(images/menu-main-button-nonactive.png) no-repeat;}
+        .top-menu ul li.first a:hover{width:147px;height:54px;background:url(images/menu-main-button-active.png) no-repeat;}
+        */
+        
+        .top-menu ul li#i0 a {width:147px;height:54px;background:url('images/menu-item-main.png') no-repeat;}
+        .top-menu ul li#i0 a:link {width:147px;height:54px;background:url('images/menu-item-main.png') no-repeat;}
+        .top-menu ul li#i0 a:hover {width:147px;height:54px;background:url('images/menu-item-main-hover.png') no-repeat;}
+        
+        .top-menu ul li#i1 a {width:140px;height:54px;background:url('images/menu-item-2.png') no-repeat;}
+        .top-menu ul li#i1 a:link {width:140px;height:54px;background:url('images/menu-item-2.png') no-repeat;}
+        .top-menu ul li#i1 a:hover {width:140px;height:54px;background:url('images/menu-item-2-hover.png') no-repeat;}
+        
+        .top-menu ul li#i2 a {width:123px;height:54px;background:url('images/menu-item-3.png') no-repeat;}
+        .top-menu ul li#i2 a:link {width:123px;height:54px;background:url('images/menu-item-3.png') no-repeat;}
+        .top-menu ul li#i2 a:hover {width:123px;height:54px;background:url('images/menu-item-3-hover.png') no-repeat;}
+        
+        .top-menu ul li#i3 div {width:163px;height:54px;background:url('images/menu-item-4-nonactive.png') no-repeat;}
+        /*.top-menu ul li#i3 a:link {width:163px;height:54px;background:url('images/menu-item-4-nonactive.png') no-repeat;}
+        .top-menu ul li#i3 a:hover {width:163px;height:54px;background:url('images/menu-item-4-nonactive.png') no-repeat;}*/
+        
+        .top-menu ul li#i4 div{width:163px;height:54px;background:url('images/menu-item-6-nonactive.png') no-repeat;}
+        /*.top-menu ul li#i4 a:link {width:163px;height:54px;background:url('images/menu-item-6-nonactive.png') no-repeat;}
+        .top-menu ul li#i4 a:hover {width:163px;height:54px;background:url('images/menu-item-6-nonactive.png') no-repeat;}*/
+        
+        .top-menu ul li#i5 div {width:164px;height:54px;background:url('images/menu-item-5-nonactive.png') no-repeat;}
+        /*.top-menu ul li#i5 a:link {width:164px;height:54px;background:url('images/menu-item-5-nonactive.png') no-repeat;}
+        .top-menu ul li#i5 a:hover {width:164px;height:54px;background:url('images/menu-item-5-nonactive.png') no-repeat;}*/
         
         
-        .top-menu ul li#i6 {width:67px;border-right:0 !important;}
-        .top-menu ul li#i6 a span#s6 {position: relative;top: 7px; width:67px; height:54px;}
+        .top-menu ul li#i6 a {width:67px;height:54px;background:url('images/menu-item-lock.png') no-repeat;}
+        .top-menu ul li#i6 a:link {width:67px;height:54px;background:url('images/menu-item-lock.png') no-repeat;}
+        .top-menu ul li#i6 a:hover {width:67px;height:54px;background:url('images/menu-item-lock-hover.png') no-repeat;}
         
         
         
-        .top-menu ul li.first a{
-                width:147px;
-                height:54px;
-                background:url(images/menu-main-button-nonactive.png) no-repeat;
-        }
-        .top-menu ul li.first a:link{
-                width:147px;
-                height:54px;
-                background:url(images/menu-main-button-nonactive.png) no-repeat;
-        }
-
-        .top-menu ul li.first a:hover{
-                width:147px;
-                height:54px;
-                background:url(images/menu-main-button-active.png) no-repeat;
-        }
         
         
         .top-menu ul li.leaf a:hover{
                 background:url(images/button-hover2.png) top left repeat-x;
         }
 
+        
         .top-menu ul li.last a{
                 width:67px;
                 height:54px;
