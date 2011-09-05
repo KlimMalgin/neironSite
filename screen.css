@@ -2,14 +2,13 @@
 
 body { 
   padding: 0; 
-  font: 0.8em/1.5 "arial",sans-serif; 
   background: #fff url('../img/bg.jpg') repeat-x; 
   font-family: "Verdana",sans-serif; 
   color: #303030; 
   text-align: center; 
 }
 
-   #layout { 
+   #layout,#footer,.footer-text { 
      width:986px; 
      margin:0 auto; 
      text-align:left; 
@@ -94,17 +93,6 @@ body {
             background:url(images/button-hover2.png) top left repeat-x;
     }
 
-    .top-menu ul li.last a{
-            width:67px;
-            height:54px;
-            background:url(images/menu-close-item-nonactive.png) no-repeat;
-    }
-    .top-menu ul li.last a:link{
-            width:67px;
-            height:54px;
-            background:url(images/menu-close-item-nonactive.png) no-repeat;
-    }
-
       .pre-link{position:relative;top:0;left:803px;margin-bottom: 5px;font-size:8.25pt;}
       .pre-link a{text-decoration:none;}
       
@@ -116,7 +104,6 @@ body {
       .top-menu a { color: #000; }
       .top-menu a:hover { text-decoration: none; }
 
-
     .top-menu ul li.last a:hover{
             width:67px;
             height:54px;
@@ -127,29 +114,6 @@ body {
   div.separate {width:2px; height:54px; background: url('../img/main.jpg') no-repeat;}
   
 
-
-  
-  #panel-right { float:right; width:230px; padding: 15px 10px 10px 10px; }
-  #panel-right-inside {border-left: 1px solid #ca4747; padding: 0 0 0 16px;}
-  #panel-right span { color: #e49695; }
-  #panel-right p {margin: 0;}
-  
-  #main {
-  padding: 0;
-  }
-  
-  #footer-inside {
-    width: 994px;
-    margin: -20px auto 0 auto;
-    text-align: left;
-    padding: 10px;
-  }      
-  .inside-item{
-      margin 0;
-      text-align: auto;
-  }
-  
- */
 /*-----------------------------MY CSS----------------------------------------*/
 
 .list-second{
@@ -176,12 +140,6 @@ body {
     position:relative;
     top:-30px;
 }*/
-
-.title img#button-go-geo{
-    position:relative;
-    top:0;
-    left:620px;
-}
 
         .top-menu ul{
                 position:relative; 
@@ -269,6 +227,8 @@ body {
 }
 
 .list-second li{
+    font-size: 12pt;
+    font-family: tahoma;
     float:left;
     border-right:1px solid #DDD;
     padding: 0px 24px;
@@ -291,39 +251,39 @@ body {
 }
 .last-news{
     width: 100%;
-    font-size: .9em;
+    font-size: 8pt;
     height: 100%;
     padding: 17px 0px 13px 6px;
     color: #707070;
 }
 .footer-topic{
-    font-size: 1.5em;
+    font-size: 12pt;
 }
-.footer-content{
-    font-size: .8em;
-    text-align: center;
-}
+
 .footer-item {
     float: left;
-    width: 318px;
-    height: 142px;
+    width: 310px;
+    height: 134px;
+    padding: 4px;
     background-image: url('images/page-footer-big.png');
     z-index: 10;
     box-shadow:3px 3px 3px #DDD;
-    margin: 5px;
-    border:1px solid #bbbbbb;
+    margin: 0px 14px 0px 0px;
+    border:0px solid #bbbbbb;
     border-radius: 10px;
 }
-
+.footer-item:last-child{
+    margin: 0;
+}
 .inside-item{
     background-image: url('images/page-footer-litle.png');
-        z-index: 100;
-        width: 310px;
-        height: 134px;
-        margin: .4em;
-        border-radius: 10px;
-        text-align: center;
-    }
+    z-index: 100;
+    width: 310px;
+    height: 123px;
+    text-align: center;
+    
+    padding-top: 11px; 
+}
     
     
     
@@ -331,24 +291,28 @@ body {
         display: block;
     }
     .footer-text{
-            width: 960px;
-            left: 50%;
-            margin-left: -490px;
-            padding: 10px;
-            margin-top:10px;
-            position: absolute;
-            border-top: 1px solid #DDD;
-            color: #707070;
-        }
-        .footer-content{
-            color: #666666;
-        }
-        
-        
-        .last-news a
-        {
-            color: #0098d0 !important;
-        }
+        padding: 19px 0px;
+        margin-top: 21px;
+        border-top: 1px solid #DDD;
+        color: #707070;
+        text-align: center;
+    }
+    .footer-content{
+        color: #666666;
+        font-size: 8pt;
+        text-align: center;
+    }
+    .inside-item img{
+        position: relative;
+        top: 9px;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .last-news a
+    {
+        color: #0098d0 !important;
+    }
   /*--------------slides-----------------------------
 
 ________________________       982 
@@ -373,7 +337,7 @@ ________________________
         #example {
             width:974px;
             height:444px;
-            border: 1px solid #DDD;
+            border: 0px solid #DDD;
             border-radius: 10px;
             box-shadow:2px 2px 2px 2px #DDD;
             padding: 4px;
@@ -455,3 +419,6 @@ ________________________
 - Кнопку "GO" убрать
 - Новые слайды без кнопки "GO" приложены
  */
+
+12pt tahoma
+
