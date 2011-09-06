@@ -21,7 +21,7 @@ body {
       .pre-link{position:relative;top:0;left:803px;margin-bottom: 5px;font-size:8.25pt;width:180px;}
       .pre-link a{text-decoration:none;color: #0098D0 !important;}
       
-      .top-menu { position:relative; left:8px;box-shadow:3px 3px 3px #DDD; border-radius: 10px;} /* background: #fff url('images/top-menu.png') no-repeat; */
+      .top-menu { position:relative; left:0;box-shadow:3px 3px 3px #DDD; border-radius: 10px;} /* background: #fff url('images/top-menu.png') no-repeat; */
       .top-menu { width:967px;height:54px;margin: 0 auto; color: #000; margin-bottom: 20px;}
       
       /*.top-menu .logo { position:relative; top:10px; left:30px; width:90px; height:29px; background: url('images/logo.png') no-repeat;float:left; }*/
@@ -123,7 +123,7 @@ body {
 
 
 .second-menu{
-   margin: 0px 0px 23px 15px;
+   margin: 10px 0px 13px 15px;
    padding-bottom: 23px;
 }
 .img-title{
@@ -153,8 +153,8 @@ body {
    height:100%;
 }
 .list-second li{
-    font-size: 12pt;
-    font-family: tahoma;
+    font-size: 10pt;
+    font-family: Verdana;
     float:left;
     border-right:1px solid #DDD;
     padding: 0px 24px;
