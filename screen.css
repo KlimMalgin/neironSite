@@ -142,10 +142,10 @@ body {
 
         
 
-.title img#button-go-communicator{
-    position:relative;
-    top:0;
-    left:534px;
+
+
+.title a#link-button-go{
+    float:right;
 }
 
 .list-second{
